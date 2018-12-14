@@ -1,7 +1,7 @@
 package tailrecursion;
 
 public class TailCalls {
-    public static TailCall call(final TailCall nextCall) {
+    public static <T> TailCall<T> call(final TailCall nextCall) {
         return nextCall;
     }
 
