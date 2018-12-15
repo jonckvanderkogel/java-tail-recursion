@@ -1,28 +1,26 @@
 package tailrecursion;
 
+import static tailrecursion.StackTraceHelper.printStackTrace;
+
 public class NormalRecursion {
     public static void main(String... args) {
-        System.out.println(factorial(20000));
+        System.out.println(factorial(20));
     }
 
     static Long fact(Long acc, int i) {
-        if ( i == 0 )
+        if ( i == 0 ) {
             return acc;
-        else
-            return fact( acc * i, i - 1);
+        } else {
+            printStackTrace(); // this shows the stack keeps getting larger
+            return fact(acc * i, i - 1);
+        }
     }
 
     static Long factorial(int n) {
-        if ( n == 0 )
+        if ( n == 0 ) {
             return 1L;
-        else
+        } else {
             return fact(1L, n);
+        }
     }
-
-    // fact(5, 1)
-    // fact(4, 5)
-    // fact(3, 20)
-    // fact(2, 60)
-    // fact(1, 120)
-    // fact(0, 120)
 }
