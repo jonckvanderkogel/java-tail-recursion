@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 
 @FunctionalInterface
 public interface TailCall<T> {
-    TailCall apply();
+    TailCall<T> apply();
 
     default boolean isComplete() {
         return false;
