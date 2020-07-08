@@ -1,5 +1,5 @@
-I found a few gems about Java tail recursion here:
-* https://blog.knoldus.com/tail-recursion-in-java-8
-* http://www.drdobbs.com/jvm/tail-call-optimization-and-java/240167044
+Venkat Subramaniam gave a nice talk about Java tail recursion.
 
-The code at the Knoldus blog post didn't compile but I loved the ideas presented there so just fixed the syntax (mainly generics) so it would compile.
+https://www.youtube.com/watch?v=4tEi86h8-TM&feature=youtu.be&t=32m30s
+
+This repo shows the code that he is talking about.
